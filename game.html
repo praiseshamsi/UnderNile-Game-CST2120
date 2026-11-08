@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnderNile | Choose a Level</title>
+    <!--links to styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script src="javascriptfiles/index.js" defer></script>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="title">UnderNile</h2>
+        <!--navigation-->
+        <nav class="nav" aria-label="Main navigation">
+            <a href="game.html">Home</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="gamescene.html">Play</a>
+            <button type="button" id="signOutButton">Sign Out</button>
+        </nav>
+    </header>
+    <!--main page-->
+    <main class="game-page">
+        <section class="game-controls" id="levels">
+            <h1>The UnderNile Adventure</h1>
+            <h2>Choose your level</h2>
+            <p>Press Up Arrow or Space to jump. Hold Down Arrow to slide.</p>
+            <p id="levelMessage">Complete a level to unlock the next one.</p>
+            <!--level butons-->
+            <div class="game-buttons">
+                <button
+                    type="button"
+                    class="level-button selected"
+                    data-level="1"
+                    aria-pressed="true">
+                    Level 1
+                </button>
+
+                <button
+                    type="button"
+                    class="level-button"
+                    data-level="2"
+                    aria-pressed="false"
+                    disabled>
+                    Level 2 — Locked
+                </button>
+
+                <button
+                    type="button"
+                    class="level-button"
+                    data-level="3"
+                    aria-pressed="false"
+                    disabled>
+                    Level 3 — Locked
+                </button>
+            </div>
+
+            <a class="button" id="startGameButton" href="gamescene.html">
+                Start Game
+            </a>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <p>UnderNile | An Underwater Adventure</p>
+    </footer>
+</body>
+</html>

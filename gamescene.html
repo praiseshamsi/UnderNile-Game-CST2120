@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnderNile | Game</title>
+    <!--links to styles and javascriptt-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script src="javascriptfiles/gameScene.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">UnderNile</h1>
+        <!--navigation-->
+        <nav class="nav" aria-label="Game navigation">
+            <a href="game.html">Home</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="gamescene.html">Play</a>
+            <button type="button" id="signOutButton">Sign Out</button>
+        </nav>
+    </header>
+    <!--main-->
+    <main class="game-scene">
+        <!--game container contents-->
+        <section class="game-container" aria-label="UnderNile game">
+            <div class="game-info">
+                <p>Level: <span id="levelDisplay">1</span></p>
+                <p>Score: <span id="scoreDisplay">0</span></p>
+                <p>Health: <span id="healthDisplay">100</span></p>
+            </div>
+            <!--gamecanvas-->
+            <canvas id="gameCanvas" width="1000" height="700">
+                Your browser does not support the canvas element.
+            </canvas>
+
+            <button
+                id="pauseButton"
+                type="button"
+                aria-pressed="false">
+                Pause
+            </button>
+
+            <div id="pauseOverlay" class="pause-overlay" hidden>
+                <h2>Paused</h2>
+                <p>Click Resume to continue</p>
+            </div>
+            <!--hidden messages after playing-->
+            <div id="gameEndOverlay" class="game-end-overlay" hidden>
+                <h2 id="gameOverMessage" hidden>Game Over</h2>
+
+                <h2 id="levelCompleteMessage" hidden>
+                    Level Complete!
+                </h2>
+
+                <h2 id="allLevelsCompleteMessage" hidden>
+                    Congratulations! You passed all the levels!
+                </h2>
+
+                <div class="game-end-buttons">
+                    <button id="nextLevelButton" type="button" hidden>
+                        Next Level
+                    </button>
+
+                    <button id="replayButton" type="button">
+                        Replay
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!--game instruction-->
+        <p class="game-instructions">
+            Press Up Arrow or Space to jump. Hold Down Arrow to slide.
+        </p>
+        <!--music button-->
+        <button id="musicButton" type="button">Play music</button>
+
+        <audio id="gameMusic" loop>
+            <source src="audio/game-music.mp3" type="audio/mpeg">
+        </audio>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <p>UnderNile | An Underwater Adventure</p>
+    </footer>
+</body>
+</html>

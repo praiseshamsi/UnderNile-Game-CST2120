@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(6, 17, 31);
+    color: rgb(244, 241, 233);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    margin-top: 0;
+    color: rgb(29, 204, 235);
+    font-size: 42px;
+}
+
+h2 {
+    color: rgb(29, 204, 235);
+}
+
+a {
+    color: rgb(216, 173, 88);
+}
+
+a:hover {
+    color: rgb(235, 195, 110);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 18px 5%;
+    background-color: rgb(6, 17, 31);
+    border-bottom: 1px solid rgb(39, 91, 109);
+}
+
+.title {
+    margin: 0;
+    color: rgb(29, 204, 235);
+    font-size: 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav a,
+.button,
+button {
+    display: inline-block;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(216, 173, 88);
+    color: rgb(11, 25, 48);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav a:hover,
+.button:hover,
+button:hover {
+    background-color: rgb(235, 195, 110);
+    color: rgb(11, 25, 48);
+}
+
+button:focus-visible,
+.button:focus-visible,
+.nav a:focus-visible,
+input:focus-visible {
+    outline: 3px solid rgb(29, 204, 235);
+    outline-offset: 3px;
+}
+
+/* home page */
+
+.home {
+    display: flex;
+    min-height: 85vh;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 70px 8%;
+    background:
+        linear-gradient(
+            to right,
+            rgba(6, 17, 31, 0.05),
+            rgba(6, 17, 31, 0.78)
+        ),
+        url("../images/UnderNile.png") center / cover no-repeat;
+}
+
+.home-content {
+    max-width: 490px;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+
+.tagline {
+    color: rgb(216, 173, 88);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* About page */
+
+.about-page,
+.registration-page,
+.login-page {
+    display: flex;
+    min-height: 85vh;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 60px 8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-page {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(6, 17, 31, 0.2),
+            rgba(6, 17, 31, 0.85)
+        ),
+        url("../images/about.png");
+}
+
+.about-content {
+    max-width: 650px;
+    padding: 30px;
+    background-color: rgba(6, 17, 31, 0.88);
+    border: 1px solid rgb(39, 91, 109);
+    border-radius: 12px;
+}
+
+.about-content h2 {
+    margin-top: 25px;
+}
+
+/*registration and login pages */
+
+.registration-page {
+    background-image:
+        linear-gradient(
+            rgba(6, 17, 31, 0.25),
+            rgba(6, 17, 31, 0.65)
+        ),
+        url("../images/registration.png");
+}
+
+.login-page {
+    background-image:
+        linear-gradient(
+            rgba(6, 17, 31, 0.2),
+            rgba(6, 17, 31, 0.65)
+        ),
+        url("../images/login.png");
+}
+
+.registration-box,
+.login-box {
+    width: 460px;
+    padding: 30px;
+    background-color: rgba(6, 17, 31, 0.9);
+    border: 1px solid rgb(39, 91, 109);
+    border-radius: 12px;
+}
+
+.registration-box form,
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-box label,
+.login-box label {
+    margin: 12px 0 6px;
+    color: rgb(216, 173, 88);
+    font-weight: bold;
+}
+
+.registration-box input,
+.login-box input {
+    padding: 12px;
+    border: 1px solid rgb(97, 214, 209);
+    border-radius: 6px;
+    background-color: rgb(11, 25, 48);
+    color: white;
+    font-size: 16px;
+}
+
+.registration-box input::placeholder,
+.login-box input::placeholder {
+    color: rgb(164, 180, 190);
+}
+
+.registration-box form button,
+.login-box form button {
+    margin-top: 18px;
+}
+
+#FeedbackError {
+    margin-top: 12px;
+    color: rgb(255, 107, 107);
+}
+
+#FeedbackError:empty {
+    display: none;
+}
+
+#FeedbackError.success {
+    color: rgb(118, 245, 176);
+}
+
+/*footer */
+
+.footer {
+    padding: 20px;
+    background-color: rgb(6, 17, 31);
+    border-top: 1px solid rgb(39, 91, 109);
+    color: rgb(164, 180, 190);
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}

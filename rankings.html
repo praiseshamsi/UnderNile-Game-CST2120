@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnderNile | Rankings</title>
+    <!--links to styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game.css">
+    <!--link to javascript-->
+    <script src="javascriptfiles/rankings.js" defer></script>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="title">UnderNile</h2>
+
+        <nav class="nav" aria-label="Main navigation">
+            <a href="game.html">Home</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="gamescene.html">Play</a>
+            <button type="button" id="signOutButton">Sign Out</button>
+        </nav>
+    </header>
+    <!--main for ranking page-->
+    <main class="rankings-page">
+        <section class="rankings-content">
+            <h1>UnderNile Leaderboard</h1>
+            <p>See the highest scores from players exploring the Nile.</p>
+
+            <div class="rankings-table-container">
+                <table id="rankingsTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Player</th>
+                            <th scope="col">High Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rankingsBody"></tbody>
+                </table>
+            </div>
+
+            <p id="noScoresMessage" aria-live="polite">
+                No scores available yet. Be the first to play!
+            </p>
+
+            <section class="personal-best">
+                <h2>Your Best Score</h2>
+                <p id="personalBestScore">Log in to view your best score.</p>
+            </section>
+
+            <a class="button" href="game.html">Return to Levels</a>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <p>UnderNile | An Underwater Adventure</p>
+    </footer>
+</body>
+</html>
+

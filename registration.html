@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnderNile | Sign Up</title>
+    <!--link to styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--link to javascript-->
+    <script src="javascriptfiles/registration.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="title">UnderNile</h2>
+        <!--navigation-->
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="registration.html">Sign Up</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <!--main page-->
+    <main class="registration-page">
+        <section class="registration-box">
+            <h1>Create an Account</h1>
+            <p>Begin your underwater adventure.</p>
+            <!---form for signup-->
+            <form id="signupForm" novalidate>
+                <label for="nameInput">Player Name</label>
+                <input
+                    type="text"
+                    id="nameInput"
+                    name="playerName"
+                    placeholder="Enter your name">
+
+                <label for="emailInput">Email Address</label>
+                <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    placeholder="Enter your email">
+
+                <label for="passwordInput">Password</label>
+                <input
+                    type="password"
+                    id="passwordInput"
+                    name="password"
+                    placeholder="Create a password">
+
+                <label for="confirmPasswordInput">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPasswordInput"
+                    name="confirmPassword"
+                    placeholder="Confirm your password">
+
+                <div id="FeedbackError" aria-live="polite"></div>
+
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <p>UnderNile | An Underwater Adventure</p>
+    </footer>
+</body>
+</html>
